@@ -1,1 +1,1 @@
-# Arch-Dotfiles
+# My arch configuration
