@@ -1,0 +1,47 @@
+// -------------------- Window rules --------------------
+
+// Set open-maximized to true for all windows.
+window-rule {
+  open-maximized true
+}
+
+window-rule {
+  match app-id="thunar"
+  default-column-width { proportion 0.5; }
+  default-window-height { proportion 0.5; }
+  open-floating true
+}
+
+window-rule {
+  match app-id=r#"^org\.telegram\.desktop$"# title="^Media viewer$"
+  open-fullscreen false
+  open-floating true
+}
+
+window-rule {
+  draw-border-with-background false
+}
+
+window-rule {
+  geometry-corner-radius 6
+  clip-to-geometry true
+}
+
+window-rule {
+  match app-id=r#"^org\.wezfurlong\.wezterm$"#
+  open-maximized false
+}
+
+// Open the Firefox picture-in-picture window as floating with 480×270 size.
+window-rule {
+  match app-id="firefox$" title="^Picture-in-Picture$"
+  open-floating true
+  default-column-width { fixed 480; }
+  default-window-height { fixed 270; }
+}
+
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
