@@ -72,3 +72,5 @@ alias fix-comp='rm -f ~/.zcompdump*; compinit'
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(oh-my-posh init zsh)"
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
