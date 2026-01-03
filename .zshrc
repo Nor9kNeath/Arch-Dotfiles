@@ -20,9 +20,10 @@ source "${ZINIT_HOME}/zinit.zsh"
 #path
 export PATH=$PATH:/home/xuanyu/.local/bin
 
+
 # source
 source ~/.nvm/nvm.sh
-
+source ~/.gemini
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-autosuggestions

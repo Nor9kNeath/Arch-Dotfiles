@@ -5,6 +5,10 @@ window-rule {
   open-maximized true
 }
 
+layer-rule {
+    place-within-backdrop true
+}
+
 window-rule {
   match app-id="thunar"
   default-column-width { proportion 0.5; }
